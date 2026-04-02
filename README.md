@@ -1,1 +1,156 @@
-# happy-birthday
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for you</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'georgia', serif;
+            color: #4a4a4a;
+            scroll-behavior: smooth;
+            background-color: #fff9f9;
+        }
+
+        /* sliding panels container */
+        .wrapper {
+            height: 100vh;
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;
+        }
+
+        section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            scroll-snap-align: start;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* typography and style */
+        h1, h2 {
+            font-weight: normal;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #e07a5f;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            line-height: 1.4;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        .heart {
+            color: #d85c5c;
+            font-size: 2.5rem;
+            margin-top: 20px;
+        }
+
+        /* images styles */
+        .photo-frame {
+            border: 5px solid #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            max-width: 80%;
+            height: auto;
+            margin-bottom: 30px;
+        }
+
+        /* bunga gerbera section */
+        #gerbera {
+            background-color: #fff1e6;
+        }
+
+        .gerbera-flower {
+            max-width: 150px;
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+
+        /* birthday section */
+        #birthday {
+            background-color: #e07a5f;
+            color: #fff;
+        }
+
+        #birthday h1 {
+            color: #fff;
+            font-size: 4rem;
+        }
+
+        /* navigation instruction */
+        .scroll-down {
+            position: absolute;
+            bottom: 30px;
+            font-size: 0.9rem;
+            color: #888;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-10px);}
+            60% {transform: translateY(-5px);}
+        }
+
+        /* media queries for mobile */
+        @media (max-width: 600px) {
+            h1 {font-size: 2.2rem;}
+            h2 {font-size: 1.5rem;}
+            #birthday h1 {font-size: 3rem;}
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+
+    <section id="intro">
+        <p>scroll down for a little something, sayaangku...</p>
+        <div class="heart">&#10084;</div>
+        <div class="scroll-down">v</div>
+    </section>
+
+    <section id="her-pic">
+        <img src="tautan_gambar_pacarmu_disini.jpg" alt="my beautiful girl" class="photo-frame">
+        <h2>to the most stunning person in the world, cantikkooo...</h2>
+    </section>
+
+    <section id="gerbera">
+        <img src="tautan_gambar_bunga_gerbera_disini.jpg" alt="gerbera daisy" class="gerbera-flower">
+        <h2>like this gerbera flower, you bring so much warmth and vibrant joy into my life every single day.</h2>
+    </section>
+
+    <section id="declaration">
+        <h2>i just wanted you to know how deeply i cherish you.</h2>
+        <div class="heart">&#10084;&#10084;</div>
+    </section>
+
+    <section id="birthday">
+        <h1>21!</h1>
+        <h2>happy 21st birthday, cintakku!!!</h2>
+        <p>may this new chapter be as amazing as you are. you are so special. here's to you, to us, and to many more birthdays together.</p>
+        <div class="heart">&#10084;&#10084;&#10084;</div>
+    </section>
+
+</div>
+
+</body>
+</html>
